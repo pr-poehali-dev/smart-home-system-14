@@ -1,30 +1,30 @@
 import { useEffect, useRef, useState } from "react"
-import { Home, Building, Armchair, Trees } from "lucide-react"
+import { Truck, Clock, Leaf, ShieldCheck } from "lucide-react"
 import { HighlightedText } from "./HighlightedText"
 
 const expertiseAreas = [
   {
-    title: "Жилая архитектура",
-    description: "Создаем дома, которые сочетают красоту с комфортом, где каждое пространство служит и форме, и функции.",
-    icon: Home,
+    title: "Доставка на дом",
+    description: "Привозим заказ прямо к двери по городу и пригороду. Бесплатно при заказе от 1000 рублей.",
+    icon: Truck,
   },
   {
-    title: "Коммерческие объекты",
+    title: "Доставка в день заказа",
     description:
-      "Проектируем рабочие пространства, которые вдохновляют на продуктивность и отражают ценности передовых организаций.",
-    icon: Building,
+      "Закажите до 12:00 — и получите свежую продукцию уже сегодня вечером. Молоко не успеет постоять.",
+    icon: Clock,
   },
   {
-    title: "Дизайн интерьеров",
+    title: "100% натуральный состав",
     description:
-      "Создаем интерьеры, которые гармонируют с архитектурной оболочкой, формируя целостный пространственный опыт.",
-    icon: Armchair,
+      "В нашей продукции только молоко и закваска. Никаких добавок, красителей и консервантов.",
+    icon: Leaf,
   },
   {
-    title: "Градостроительство",
+    title: "Гарантия свежести",
     description:
-      "Формируем сообщества через продуманную интеграцию общественных пространств, зданий и природных элементов.",
-    icon: Trees,
+      "Если что-то не понравится — вернём деньги или заменим продукт. Мы уверены в каждой упаковке.",
+    icon: ShieldCheck,
   },
 ]
 
@@ -57,14 +57,14 @@ export function Expertise() {
     <section id="services" ref={sectionRef} className="py-32 md:py-29">
       <div className="container mx-auto px-6 md:px-12">
         <div className="max-w-3xl mb-20">
-          <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-6">Наши услуги</p>
+          <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-6">Доставка и сервис</p>
           <h2 className="text-6xl font-medium leading-[1.15] tracking-tight mb-6 text-balance lg:text-8xl">
-            <HighlightedText>Экспертиза</HighlightedText>, отточенная
+            <HighlightedText>Свежесть</HighlightedText> у вас
             <br />
-            практикой
+            на столе
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed">
-            Каждый проект опирается на десятилетия совокупного опыта, создавая архитектуру, которая одновременно инновационна и вневременна.
+            Мы заботимся о том, чтобы натуральные продукты с фермы доходили до вас быстро, удобно и без потери качества.
           </p>
         </div>
 
